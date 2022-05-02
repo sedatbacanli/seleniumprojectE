@@ -29,7 +29,7 @@ public class Task1_YahooTitleVerification {
         //3. Verify title:
         //Expected: Yahoo | Mail, Weather, Search, Politics, News, Finance, Sports & Videos";
         String expectedTitle = "Yahoo | Mail, Weather, Search, Politics, News, Finance, Sports & Videos";
-
+        //
         //actual title comes from the browser
         String actualTitle = driver.getTitle();
         if (actualTitle.equals(expectedTitle)){
