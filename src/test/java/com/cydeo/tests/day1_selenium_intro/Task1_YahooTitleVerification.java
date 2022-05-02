@@ -8,12 +8,23 @@ public class Task1_YahooTitleVerification {
     public static void main(String[] args) {
 
         //TC #1: Yahoo Title Verification
-        //1. Open Chrome browser
-        //do setup for browser driver
+
+        // do setup for browser driver
+
         WebDriverManager.chromedriver().setup();
 
-        //2. Go to https://www.yahoo.com
+        //1.Open ChromeDriver
+
         WebDriver driver = new ChromeDriver();
+
+        // Make our page fullscreen
+
+        driver.manage().window().maximize();
+
+        //2. Go to https://www.yahoo.com
+
+        driver.get("https//:www.yahoo.com");
+
 
         //3. Verify title:
         //Expected: Yahoo
