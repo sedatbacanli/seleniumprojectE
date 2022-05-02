@@ -23,7 +23,7 @@ public class Task1_YahooTitleVerification {
 
         //2. Go to https://www.yahoo.com
 
-        driver.get("https//:www.yahoo.com");
+        driver.get("https://www.yahoo.com");
 
 
         //3. Verify title:
