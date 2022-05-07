@@ -13,8 +13,10 @@ public class T1_CydeoVerifications {
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
+
         //2. Go to https://.practice.cydeo.com
         driver.navigate().to("https://practice.cydeo.com");
+
         //3. Verify URL Contains
         //Expected: cydeo
         String ecpectedURL ="cydeo";
@@ -23,6 +25,15 @@ public class T1_CydeoVerifications {
             System.out.println("URL Verification PASSED");
         }else {
             System.out.println("URL Verification FAILED");
+        }
+        //4. Verify Title
+        //Expected: Practice
+        String expectedTitle = "Practice";
+        String actualTtle = driver.getTitle();
+        if (actualTtle.equals(expectedTitle)){
+            System.out.println("Title Verification PASSED!");
+        }else {
+            System.out.println("Title Verification FAILED!");
         }
     }
 }
