@@ -11,7 +11,10 @@ public class T3_GoogleSearch {
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
+
         //2- Go to: https://google.com
+        driver.get("https://google.com");
+
         //3- Write “apple” in search box
         //4- Click google search button
         //5- Verify title:
