@@ -28,6 +28,14 @@ public class T2_Linktext_Practice {
 
         //4- Verify title is:
         //  Expected: No A/B Test
+
+        String expectedTitle = "No A/B Test";
+        String actualTitle = driver.getTitle();
+        if (actualTitle.equals(expectedTitle)){
+            System.out.println("Test Verification PASSED!");
+        }else{
+            System.out.println("Test Verification FAILED!!!");
+        }
         //5- Go back to home page by using the .back();
         //6- Verify title equals:
         //  Expected: Practice
