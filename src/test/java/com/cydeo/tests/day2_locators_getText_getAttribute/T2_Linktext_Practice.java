@@ -15,6 +15,7 @@ public class T2_Linktext_Practice {
         driver.manage().window().maximize();
 
         //2- Go to: https://practice.cydeo.com
+
         //3- Click to A/B Testing from top of the list.
         //4- Verify title is:
         //  Expected: No A/B Test
