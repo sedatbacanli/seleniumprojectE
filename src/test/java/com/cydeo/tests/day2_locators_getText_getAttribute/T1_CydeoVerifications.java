@@ -13,8 +13,16 @@ public class T1_CydeoVerifications {
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
-        //2. Go to https://www.yahoo.com
-        //3. Verify title:
-        //Expected: Yahoo
+        //2. Go to https://.practice.cydeo.com
+        driver.navigate().to("https://practice.cydeo.com");
+        //3. Verify URL Contains
+        //Expected: cydeo
+        String ecpectedURL ="cydeo";
+        String actualURL = driver.getCurrentUrl();
+        if (actualURL.contains(ecpectedURL)){
+            System.out.println("URL Verification PASSED");
+        }else {
+            System.out.println("URL Verification FAILED");
+        }
     }
 }
