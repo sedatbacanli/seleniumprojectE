@@ -19,7 +19,7 @@ public class HomeWork_4 {
         //2- Go to: https://practice.cydeo.com/inputs
         driver.get("https://practice.cydeo.com/inputs ");
         //3- Click to “Home” link
-        WebElement Home = driver.findElement(By.linkText("Home"));
+        WebElement Home = driver.findElement(By.className("nav-link"));
         Home.click();
 
         //4- Verify title is as expected:
