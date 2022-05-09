@@ -23,6 +23,10 @@ public class GetText_GetAttribute {
         //  Expected: Registration form
         String expectedHeaderText = "Registration form";
         String actualHeaderText = headerText.getText();
+        if (expectedHeaderText.equals(actualHeaderText)){
+            System.out.println("headerText is PASSED!!");
+        }else {
+            System.out.println("headerText is FAILED!!");}
 
 
         //4- Locate “First name” input box
