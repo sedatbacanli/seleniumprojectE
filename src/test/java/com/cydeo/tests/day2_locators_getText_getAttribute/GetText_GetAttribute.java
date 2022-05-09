@@ -39,5 +39,6 @@ public class GetText_GetAttribute {
             System.out.println("Place Holder Test verification PASSED");
         } else
         { System.out.println("Place Holder Test verification FAILED!!!" );}
+        driver.close();
     }
 }
