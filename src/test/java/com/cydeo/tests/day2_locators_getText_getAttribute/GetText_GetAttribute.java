@@ -24,13 +24,20 @@ public class GetText_GetAttribute {
         String expectedHeaderText = "Registration form";
         String actualHeaderText = headerText.getText();
         if (expectedHeaderText.equals(actualHeaderText)){
-            System.out.println("headerText is PASSED!!");
+            System.out.println("Header text verification PASSED!!!");
         }else {
-            System.out.println("headerText is FAILED!!");}
-
+            System.out.println("Header text verification FAILED!!");}
 
         //4- Locate “First name” input box
+        WebElement firstNameInput = driver.findElement(By.name("firstname"));
+
         //5- Verify placeholder attribute’s value is as expected:
         //  Expected: first name
+        String expectedFirstName = "first name";
+        String actualFirstName = firstNameInput.getAttribute("placeholder");
+        if (expectedFirstName.equals(actualFirstName)){
+            System.out.println("Place Holder Test verification PASSED");
+        } else
+        { System.out.println("Place Holder Test verification FAILED!!!" );}
     }
 }
