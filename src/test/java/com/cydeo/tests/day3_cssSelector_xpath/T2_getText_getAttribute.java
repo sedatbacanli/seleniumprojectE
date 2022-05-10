@@ -27,6 +27,14 @@ public class T2_getText_getAttribute {
         }
         //4- Verify “forgot password” link text is as expected:
         //Expected: Forgot your password?
+        WebElement forgotPasswordlinkText = driver.findElement(By.className("login-link-forgot-pass"));
+        String expectedForgotPasswordlinkText = "Forgot your password?";
+        String actualForgotPasswordLinkText = forgotPasswordlinkText.getText();
+        if (expectedForgotPasswordlinkText.equals(actualForgotPasswordLinkText)) {
+            System.out.println("Forgot Password Link Text Verification is PASSED!!!");
+        }else {
+            System.out.println("Forgot Password Link Text Verification is FAILED!!!");
+        }
         //5- Verify “forgot password” href attribute’s value contains expected:
         //Expected: forgot_password=yes
         //
