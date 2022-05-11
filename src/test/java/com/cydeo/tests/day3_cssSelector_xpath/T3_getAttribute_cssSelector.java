@@ -32,8 +32,13 @@ public class T3_getAttribute_cssSelector {
 
         String expectedButtonText = "Log In";
         String actualButtonText = signInButton.getAttribute("value");
+        System.out.println("actualButtonText = " + actualButtonText);
 
-
+        if (actualButtonText.equals(expectedButtonText)) {
+            System.out.println("log In Button Text Verification is PASSED!!!");
+        }else {
+            System.out.println("log In Button Text Verification is FAILED!!!");
+        }
 
 
         //
