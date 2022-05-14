@@ -20,10 +20,12 @@ public class T6_StaleElementReferenceException {
         System.out.println("cydeoLink.isDisplayed() = " + cydeoLink.isDisplayed());
 
         //4- Refresh the page.
-       // WebElement refreshThePage = driver.findElement(By.xpath(""));
+        // WebElement refreshThePage = driver.findElement(By.xpath(""));
         driver.navigate().refresh();
 
         //5- Verify it is displayed, again.
+        cydeoLink = driver.findElement(By.xpath("//a[text()='CYDEO']"));
+        System.out.println("cydeoLink.isDisplayed() = " + cydeoLink.isDisplayed());
 
     }
 }
