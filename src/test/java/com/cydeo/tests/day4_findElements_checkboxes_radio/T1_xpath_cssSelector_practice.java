@@ -25,10 +25,11 @@ public class T1_xpath_cssSelector_practice {
 
         WebElement homeLink_ex3 = driver.findElement(By.cssSelector("a[href='/']"));
 
-
-
-
         //b. “Forgot password” header
+        //Locate header using CSS Selector: Locate parent element and move down to h2
+        WebElement header_ex1 = driver.findElement(By.cssSelector(""));
+
+
         //c. “E-mail” text
         //d. E-mail input box
         //e. “Retrieve password” button
