@@ -27,7 +27,11 @@ public class T1_xpath_cssSelector_practice {
 
         //b. “Forgot password” header
         //Locate header using CSS Selector: Locate parent element and move down to h2
-        WebElement header_ex1 = driver.findElement(By.cssSelector(""));
+        WebElement header_ex1 = driver.findElement(By.cssSelector("div.example>h2"));
+
+        //Locate header using xpath
+        WebElement header_ex2 = driver.findElement(By.xpath("//h2[text()='Forgot Password']"));
+
 
 
         //c. “E-mail” text
