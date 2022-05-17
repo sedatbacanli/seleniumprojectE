@@ -28,8 +28,12 @@ public class T3_RadioButton_cont {
             String eachId = each.getAttribute("id");
             System.out.println("eachId = " + eachId);
 
+            if (eachId.equals("hockey")) {
+                each.click();
+                System.out.println("Hockey is selected : " +each.isSelected());
+                break;
+            }
         }
-
 
 
     }
