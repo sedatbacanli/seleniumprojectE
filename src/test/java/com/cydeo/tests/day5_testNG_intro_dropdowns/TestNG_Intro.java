@@ -8,7 +8,7 @@ public class TestNG_Intro {
         System.out.println("---> BeforeClassMethod is running!");
     }
     @AfterClass
-    public void tearDownMethod(){
+    public void tearDownClass(){
         System.out.println("---> AfterClassMethod is running!");
     }
 
