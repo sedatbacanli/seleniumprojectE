@@ -4,7 +4,7 @@ import org.testng.annotations.*;
 
 public class TestNG_Intro {
     @BeforeClass
-    public void setUpMethod(){
+    public void setupMethod(){
         System.out.println("---> BeforeClass is running!");
     }
     @AfterClass
