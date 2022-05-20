@@ -5,11 +5,11 @@ import org.testng.annotations.*;
 public class TestNG_Intro {
     @BeforeClass
     public void setUpMethod(){
-        System.out.println("---> BeforeClassMethod is running!");
+        System.out.println("---> BeforeClass is running!");
     }
     @AfterClass
     public void tearDownClass(){
-        System.out.println("---> AfterClassMethod is running!");
+        System.out.println("---> AfterClass is running!");
     }
 
     @BeforeMethod
