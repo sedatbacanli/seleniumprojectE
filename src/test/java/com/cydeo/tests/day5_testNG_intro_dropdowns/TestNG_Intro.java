@@ -12,7 +12,7 @@ public class TestNG_Intro {
     }
     @AfterMethod
     public void tearDownMethod(){
-        System.out.println("---> After Method is running!");
+        System.out.println("---> AfterMethod is running!");
     }
 
     @Test
