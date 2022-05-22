@@ -42,6 +42,13 @@ public class T4_SimpleDropdowns {
 
 
         //4. Verify “State selection” default selected value is correct
+        Select stateDropdown = new Select(driver.findElement(By.xpath("//select[@id='state']")));
         //Expected: “Select a State”
+        String expectedStateDropdownText =  "Select a State";
+        String actualStateDropdownText = stateDropdown.getFirstSelectedOption().getText();
+        Assert.assertEquals(actualSimpleDropdownText, expectedSimpleDropdownText);
+        //Assert.assertEquals("stateDropdown.getFirstSelectedOption().getText()", "Select a State");
+
+
     }
 }
