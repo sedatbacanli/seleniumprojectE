@@ -20,7 +20,6 @@ public void dropdown_task5(){
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get("http://practice.cydeo.com/dropdown");
 
-
         //3. Select Illinois
         //4. Select Virginia
         //5. Select California
